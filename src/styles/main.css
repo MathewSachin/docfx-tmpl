@@ -1,6 +1,18 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
 
-.sidenav {
+#search {
+  border: none;
+}
+
+.sidetoc,
+body .toc,
+.sidefilter,
+.sidetoggle { 
+  background-color: #f9fbe7; 
+}
+
+.sidenav,
+.toc-toggle {
   padding: 0;
 }
 
@@ -60,6 +72,16 @@ article h4 {
 @media (min-width: 768px) {
   .sidetoc, .sidefilter {
     margin-left: -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: center !important;
+  }
+
+  .navbar-collapse li .active {
+    border-radius: 20px;
   }
 }
 
@@ -125,4 +147,76 @@ article h4 {
 
 .affix ul ul > li > a:before {
   content: '';
+}
+
+/* custom navbar */
+.navbar-inverse {
+  background-color: #318f7c;
+  opacity: 0.95;
+  border-color: #02735f;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #ecdbff;
+}
+.navbar-inverse .navbar-text {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ecdbff;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ecdbff;
+  background-color: #02735f;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #ecdbff;
+  background-color: #02735f;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #02735f;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #02735f;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border: none;
+}
+.navbar-inverse .navbar-link {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-link:hover {
+  color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ecdbff;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ecdbff;
+    background-color: #02735f;
+  }
 }
