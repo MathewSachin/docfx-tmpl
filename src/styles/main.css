@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
+
 .sidenav {
   padding: 0;
 }
@@ -25,6 +27,34 @@ article h4 {
 
 .expander.collapsed:after {
     content: "\e259";
+}
+
+.fab {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 11px 0 0 0;
+    border: none;
+    outline: none;
+    color: #FFF;
+    border-radius: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+}
+
+.fab + .fab {
+  margin-right: 15px;
+}
+
+.contribution-panel {
+    z-index: 1000;
+    position: fixed;
+    right: 30px;
+    top: 70px;
 }
 
 @media (min-width: 768px) {

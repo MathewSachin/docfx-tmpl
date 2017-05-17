@@ -6,13 +6,15 @@
 {{^_disableContribution}}
 {{#docurl}}
 <span class="small pull-right mobile-hide">
-  <span class="divider">|</span>
-  <a href="{{docurl}}">{{__global.improveThisDoc}}</a>
-</span>{{/docurl}}
+  <span class="divider"> </span>
+  <a href="{{docurl}}" title="{{__global.improveThisDoc}}"><i class="fa fa-pencil"></i></a>
+</span>
+{{/docurl}}
 {{#sourceurl}}
 <span class="small pull-right mobile-hide">
-  <a href="{{sourceurl}}">{{__global.viewSource}}</a>
-</span>{{/sourceurl}}
+  <a href="{{sourceurl}}" title="{{__global.viewSource}}"><i class="fa fa-code"></i></a>
+</span>
+{{/sourceurl}}
 {{/_disableContribution}}
 
 {{#overload}}
