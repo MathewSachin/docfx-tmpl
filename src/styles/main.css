@@ -6,8 +6,10 @@
   padding-bottom: 15px;
 }
 
-.sidetoc, .sidefilter {
-  margin-left: -15px;
+@media (min-width: 768px) {
+  .sidetoc, .sidefilter {
+    margin-left: -15px;
+  }
 }
 
 /* sidebar */
