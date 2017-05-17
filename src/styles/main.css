@@ -4,6 +4,10 @@
   border: none;
 }
 
+.fa-code {
+  font-size: 19px;
+}
+
 .sidetoc,
 body .toc,
 .sidefilter,

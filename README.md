@@ -12,6 +12,7 @@ Supported DocFX version: [v2.17.4](https://github.com/dotnet/docfx/releases/tag/
 - Pretty tables for Class view.
 - Collapsible sections in API documentation.
 - Round Buttons for View-Source and Edit.
+- Different colors.
 
 ## How to use
 
