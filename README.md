@@ -5,8 +5,15 @@ Supported DocFX version: 2.17.4
 
 How to use:
 
-In docfx.json
+In docfx.json (showing only relevant portion):
 
 ```json
-template: ["default", "<relative path to src folder>"]
+{
+    "build": {
+        "template": [
+            "default",
+            "<relative path to src folder of this template>"
+        ]
+    }
+}
 ```
