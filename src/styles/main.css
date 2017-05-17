@@ -6,7 +6,14 @@
   padding-bottom: 15px;
 }
 
+.sidetoc, .sidefilter {
+  margin-left: -15px;
+}
+
 /* sidebar */
+.affix h5 {
+  display: none;
+}
 
 /* active & hover links */
 .affix ul > li > a:hover,
