@@ -19,7 +19,9 @@
 <a id="{{id}}" data-uid="{{uid}}"></a>
 {{/overload}}
 
-<h4 id="{{id}}" data-uid="{{uid}}">{{name.0.value}}</h4>
+<h4 id="{{id}}" data-uid="{{uid}}"><a href="#collapsible-{{id}}" class="expander" data-toggle="collapse">{{name.0.value}}</a></h4>
+
+<div id="collapsible-{{id}}" class="collapse in">
 <div class="markdown level1 summary">{{{summary}}}</div>
 <div class="markdown level1 conceptual">{{{conceptual}}}</div>
 <h5 class="decalaration">{{__global.declaration}}</h5>
@@ -171,6 +173,7 @@
 {{#seealso.0}}
 </div>
 {{/seealso.0}}
+</div>
 {{/children}}
 {{/children}}
 

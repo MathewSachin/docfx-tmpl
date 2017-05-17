@@ -6,6 +6,27 @@
   padding-bottom: 15px;
 }
 
+.collapse.in,
+.collapsing {
+  text-align: unset;
+}
+
+article h4 {
+  border-bottom: none;
+}
+
+.expander:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e260";
+    margin-left: 5px;
+    color: grey;
+    font-size: small;
+}
+
+.expander.collapsed:after {
+    content: "\e259";
+}
+
 @media (min-width: 768px) {
   .sidetoc, .sidefilter {
     margin-left: -15px;
