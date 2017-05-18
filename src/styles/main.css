@@ -1,5 +1,13 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
 
+/* clickability fix for selector on sm devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  article h1:first-of-type:before {
+    height: 0;
+    margin-top: 0;
+  }  
+}
+
 #search {
   border: none;
 }
