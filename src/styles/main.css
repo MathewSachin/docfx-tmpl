@@ -161,6 +161,26 @@ article h4 {
   content: '';
 }
 
+/* navbar hamburger */
+.icon-bar {
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .icon-bar:nth-of-type(2) {
+    transform: rotate(-45deg) translate(-4px, 5px) ;
+}
+
+/* Fade out the second bar */
+.change .icon-bar:nth-of-type(3) {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .icon-bar:nth-of-type(4) {
+    transform: rotate(45deg) translate(-4px, -5px) ;
+}
+
 /* custom navbar */
 .navbar-inverse {
   background-color: #318f7c;
