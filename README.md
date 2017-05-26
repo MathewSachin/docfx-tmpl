@@ -15,6 +15,13 @@ Supported DocFX version: [v2.17.4](https://github.com/dotnet/docfx/releases/tag/
 - Different colors.
 
 ## How to use
+The template is contained in the source folder.
+
+**Clone or Download**  
+In a terminal, run: `git clone https://github.com/MathewSachin/docfx-tmpl.git`
+
+**Apply Template**  
+Use `default, <relative path to src folder of this template>`
 
 In docfx.json (showing only relevant portion):
 
@@ -23,8 +30,25 @@ In docfx.json (showing only relevant portion):
     "build": {
         "template": [
             "default",
-            "<relative path to src folder of this template>"
+            "docfx-tmpl/src"
         ]
     }
 }
 ```
+
+**OR**
+
+In Command-line:
+
+```
+docfx -t default,docfx-tmpl/src
+```
+
+## ScreenShots
+![Large](screenshots/1.png)
+
+![Small](screenshots/2.png)
+
+![XS](screenshots/3.png)
+
+![Navbar](screenshots/4.png)
