@@ -1,16 +1,12 @@
 {{>partials/class.header}}
 {{#children}}
-<h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
-<table>
   {{#children}}
-    <tr>
-      <td id="{{id}}">
-        {{name.0.value}}
-        <p>{{{summary}}}</p>
-      </td>
-    </tr>
+    <h4 id="{{id}}"><a href="#collapsible-{{id}}" class="expander" data-toggle="collapse">{{name.0.value}}</a></h4>
+
+    <div id="collapsible-{{id}}" class="collapse in">
+      <p>{{{summary}}}</p>
+    </div>
   {{/children}}
-</table>
 {{/children}}
 
 {{#extensionMethods.0}}

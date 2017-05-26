@@ -8,7 +8,7 @@ Supported DocFX version: [v2.17.4](https://github.com/dotnet/docfx/releases/tag/
 - Affix sidebar styled like Bootstrap Documentation.
 - Thinner TOC toggle button on mobiles.
 - Hides the **IN THIS ARTICLE** heading above sidebar.
-- Tabular views for Namespace and enum pages.
+- Tabular views for Namespace.
 - Pretty tables for Class view.
 - Collapsible sections in API documentation.
 - Round Buttons for View-Source and Edit.
