@@ -1,6 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
 
-/* clickability fix for selector on sm devices */
+/* Clickability fix for selector on sm devices */
 @media (min-width: 768px) and (max-width: 991px) {
   article h1:first-of-type:before {
     height: 0;
@@ -32,6 +32,7 @@ body .toc,
   padding-bottom: 15px;
 }
 
+/* Remove center align from Navbar and Collapsible section */
 .collapse.in,
 .collapsing {
   text-align: unset;
@@ -41,6 +42,24 @@ article h4 {
   border-bottom: none;
 }
 
+@media (min-width: 768px) {
+  .sidetoc, .sidefilter {
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: center !important;
+  }
+
+  .navbar-collapse li .active {
+    border-radius: 20px;
+  }
+}
+
+/* Collapsible Sections
+   ------------------------------------------------------- */
 .expander:after {
     font-family: 'Glyphicons Halflings';
     content: "\e260";
@@ -53,6 +72,8 @@ article h4 {
     content: "\e259";
 }
 
+/* Floating buttons
+   ------------------------------------------------------- */
 .fab {
     width: 40px;
     height: 40px;
@@ -81,23 +102,8 @@ article h4 {
     top: 70px;
 }
 
-@media (min-width: 768px) {
-  .sidetoc, .sidefilter {
-    margin-left: -15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .navbar-collapse {
-    text-align: center !important;
-  }
-
-  .navbar-collapse li .active {
-    border-radius: 20px;
-  }
-}
-
-/* sidebar */
+/* Bootstrap docs like sidebar
+   ------------------------------------------------------- */
 .affix h5 {
   display: none;
 }
@@ -161,7 +167,8 @@ article h4 {
   content: '';
 }
 
-/* navbar hamburger */
+/* Navbar Hamburger
+   ------------------------------------------------------- */
 .icon-bar {
     transition: 0.4s;
 }
@@ -181,7 +188,8 @@ article h4 {
     transform: rotate(45deg) translate(-4px, -5px) ;
 }
 
-/* custom navbar */
+/* Custom Navbar
+   ------------------------------------------------------- */
 .navbar-inverse {
   background-color: #318f7c;
   opacity: 0.95;
