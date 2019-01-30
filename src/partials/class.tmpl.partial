@@ -1,6 +1,11 @@
 {{>partials/class.header}}
 {{#children}}
-<h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
+<h3 id="{{id}}">
+  <a href="#collapse-{{>partials/classSubtitle}}" class="expander" data-toggle="collapse">
+    {{>partials/classSubtitle}}
+  </a>
+</h3>
+<div id="collapse-{{>partials/classSubtitle}}">
 {{#children}}
 
 {{^_disableContribution}}
@@ -177,6 +182,7 @@
 {{/seealso.0}}
 </div>
 {{/children}}
+</div>
 {{/children}}
 
 {{#extensionMethods.0}}
